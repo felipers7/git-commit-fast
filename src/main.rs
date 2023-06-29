@@ -5,11 +5,6 @@ fn main() {
     // Get the command-line arguments
     let args: Vec<String> = env::args().collect();
     
-    println!("argg");
-
-    for arg in &args {
-        println!("{}",arg);
-    }
     if args.len() < 2 {
         println!("Please provide a commit message.");
         return;
