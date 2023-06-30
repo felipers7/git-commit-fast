@@ -10,8 +10,6 @@ fn main() {
         return;
     }
 
-    // ss
-
     let commit_message = args[1..].join(" ");
 
     let output = Command::new("git")
