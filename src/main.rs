@@ -16,7 +16,7 @@ fn main() {
         .output()
         .expect("Failed to execute git add .");
 
-    if output.status.sucess(){
+    if output.status.success(){
         println!("Successfully added!")
     }
     else{
@@ -29,7 +29,7 @@ fn main() {
 
     let output = Command::new("git")
         .arg("commit")
-        .arg("am")
+        .arg("-m")
         .arg(&commit_message)
         .output()
         .expect("Failed to execute git command.");
